@@ -1,0 +1,36 @@
+<head>
+  <title>dispatch:signature</title>
+</head>
+
+<body>
+  {{> example1}}
+  {{> example2}}
+</body>
+
+<template name="example1">
+  {{> Signature
+    id="example1"
+    label="SIGN HERE"
+    containerClass="container"
+    labelClass="label"
+    lineClass="line1"
+  }}
+
+  {{#unless isEmpty}}
+    <button>Clear</button>
+  {{/unless}}
+</template>
+
+<template name="example2">
+  {{> Signature
+    id="example2"
+    label="INITIAL HERE"
+    containerClass="container"
+    labelClass="label"
+    lineClass="line2"
+  }}
+
+  {{#unless isEmpty}}
+    <button>Clear</button>
+  {{/unless}}
+</template>

@@ -1,0 +1,36 @@
+.signature-line {
+  border: none;
+
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  width: 90%;
+}
+
+.signature-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.label-in {
+  animation: label-fadeIn 350ms ease-out forwards;
+}
+
+.label-out {
+  animation: label-fadeOut 350ms ease-out forwards;
+}
+
+@keyframes label-fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes label-fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

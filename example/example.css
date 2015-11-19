@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  overflow: hidden;
+
+  width: 500px;
+  height: 200px;
+}
+
+.label {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  color: #CCC;
+
+  opacity: 0;
+}
+
+.line1 {
+  border-bottom: 2px dotted #333;
+}
+
+.line2 {
+  border-bottom: 2px solid #333;
+}

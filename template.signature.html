@@ -1,0 +1,7 @@
+<template name="Signature">
+  <div class="{{containerClass}}">
+    <label class="{{labelClass}} {{#if isEmpty}}label-in{{else}}label-out{{/if}}">{{label}}</label>
+    <hr class="signature-line {{lineClass}}" />
+    <canvas id="{{id}}" class="signature-canvas"></canvas>
+  </div>
+</template>
