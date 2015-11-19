@@ -12,10 +12,10 @@ Npm.depends({
 Package.onUse(function (api) {
   api.use([
     // core
-    'ecmascript',
-    'reactive-var',
-    'templating',
-    'underscore'
+    'ecmascript@0.1.6',
+    'reactive-var@1.0.6',
+    'templating@1.1.5',
+    'underscore@1.0.4'
   ], 'web');
 
   api.addFiles([
