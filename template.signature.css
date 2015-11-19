@@ -1,10 +1,16 @@
-.signature-line {
-  border: none;
+.signature-wrapper, .signature-label {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 
+.signature-line {
   position: absolute;
   bottom: 20%;
   left: 5%;
   width: 90%;
+  border: none;
 }
 
 .signature-canvas {
