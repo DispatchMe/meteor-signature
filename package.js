@@ -1,7 +1,7 @@
 Package.describe({
   name: 'dispatch:signature',
   summary: 'A signature component for meteor (also works with on cordova).',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/DispatchMe/meteor-signatures'
 });
 
@@ -10,12 +10,14 @@ Npm.depends({
 });
 
 Package.onUse(function (api) {
+  api.versionsFrom('1.2');
+
   api.use([
     // core
-    'ecmascript@0.1.6',
-    'reactive-var@1.0.6',
-    'templating@1.1.5',
-    'underscore@1.0.4'
+    'ecmascript',
+    'reactive-var',
+    'templating',
+    'underscore'
   ], 'web');
 
   api.addFiles([
