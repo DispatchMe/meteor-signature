@@ -1,3 +1,5 @@
+import SignaturePad from 'signature_pad';
+
 const SIGNATURE_PAD_MAP = new ReactiveVar({});
 
 var signaturePad = class signaturePad {
@@ -10,7 +12,7 @@ var signaturePad = class signaturePad {
     this._element = options.element || document.createElement('canvas');
 
     // Create the signature pad on the specified element.
-    this._signature = new window.SignaturePad(this._element, {
+    this._signature = new SignaturePad(this._element, {
       penColor: options.penColor || '#1895cc',
       minWidth: options.minWidth || 0.75,
       maxWidth: options.maxWidth || 3,

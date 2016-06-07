@@ -1,19 +1,18 @@
 Package.describe({
   name: 'dispatch:signature',
-  summary: 'A signature component for meteor (also works with on cordova).',
-  version: '1.0.1',
-  git: 'https://github.com/DispatchMe/meteor-signatures'
+  summary: 'A signature component Meteor package for browser and Cordova.',
+  version: '2.0.0',
+  git: 'https://github.com/DispatchMe/meteor-signature'
 });
 
 Npm.depends({
-  'signature_pad': '1.5.1'
+  'signature_pad': '1.5.3'
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('1.2');
+  api.versionsFrom('1.3');
 
   api.use([
-    // core
     'ecmascript',
     'reactive-var',
     'templating',
@@ -21,9 +20,6 @@ Package.onUse(function (api) {
   ], 'web');
 
   api.addFiles([
-    // library
-    '.npm/package/node_modules/signature_pad/signature_pad.min.js',
-
     // package
     'signature.js',
     'template.signature.css',
